@@ -1,0 +1,40 @@
+/*sprites*/
+.sprite {
+  background: url('../images/assets/spritesheet.png') no-repeat;
+  width: 1550px;
+  height: 275px; 
+}
+
+/*Using http://www.spritecow.com/ to get positions*/
+.preview_button {
+  background-position: 0.489% 2.724%;
+  max-width: 100%;
+  width: 118px;
+  height: 18px;
+  position: absolute;
+  top: 113em;
+  left: 73%;
+  text-align: center;
+}
+
+/*.preview_button::after {
+  background-position: 9.497% 2.724%;
+  max-width: 100%;
+  width: 118px;
+  height: 18px;
+  position: absolute;
+  top: 113em;
+  left: 73%;
+  text-align: center;
+}*/
+
+.add_button {
+  background-position: 6.925% 13.525%;
+  position: absolute;
+  max-width: 100%;
+  width: 106px;
+  height: 31px;
+  top: 6em;
+  right: -38%;
+}
+

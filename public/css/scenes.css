@@ -1,0 +1,55 @@
+.scenes {
+  position: relative;
+  top: 49%;
+  left: 17%;
+  height: 19%; /*328px;*/
+  max-width: 76%;
+  /*position: relative;
+  top: 48%;
+  left: 15%;
+  height: 328px;
+  width: 80%;*/
+  /*border: 2px solid white;
+  box-shadow: 0 3px 3px #AFAFAF;*/
+}
+
+/*.scenes::before {
+  content: "Only the best story will win the Grand Prize, so think about your story before you submit your scenes! Roughly 3 lines of text be displayed maximum.  Only the best story will win the Grand Prize, so think about your story. ";
+  color: #AFAFAF;
+  padding: 5px 5px 0 5px;
+  text-align: center;
+  position: absolute;
+  top: 83%;
+  height: 17%;
+  max-width: 100%;
+  border-top: 2px solid #AFAFAF;
+  box-shadow: 0 3px 3px #AFAFAF;
+  background-color: black;
+}*/
+
+.updated_text {
+  color: #AFAFAF;
+  padding: 0 5px 0 5px;
+  font-size: 1em;
+  /*border: 1px solid yellow;*/
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  height: 20%;
+  max-width: 100%;
+  background-color: black;
+  border-top: 2px solid #AFAFAF;
+  box-shadow: 0 3px 3px #AFAFAF;
+}
+
+.scenes p {
+  color: #AFAFAF;
+}
+
+.scene_text {
+  position: absolute;
+  width: 57%;
+  text-align: right;
+  top: 36%;
+  right: 6%; /*60px;*/
+}

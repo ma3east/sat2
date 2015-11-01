@@ -1,0 +1,30 @@
+nav {
+  background-color: transparent;
+  border-color: transparent;
+  text-align: center;
+  height: 2em;
+  width: auto;
+  margin-top: 0;
+}
+
+li {
+  list-style: none;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex; 
+}
+
+/*nav ul li a {
+  padding-right: 50px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}*/
+
+nav ul li .home {
+  background-position: 14.932% 15.175%;
+  max-width: 100%;
+  width: 70px;
+  height: 18px;
+  position: absolute;
+}
