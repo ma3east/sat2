@@ -54,10 +54,11 @@ $('.slider1').slick({
 ]
 });
 
-$('.add_button').click(function() {
-  var text = $('textarea').val();
+// updated text on scene on clicking add button
+$(".add_button").click(function() {
 
-//send to server and process response
+  $('.updated_text p').replaceWith( $( 'textarea' ).val() );
+  
 });
 
 //disable preview button going elsewhere and toggle color/sprite on click
