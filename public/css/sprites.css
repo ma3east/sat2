@@ -17,17 +17,6 @@
   text-align: center;
 }
 
-/*.preview_button::after {
-  background-position: 9.497% 2.724%;
-  max-width: 100%;
-  width: 118px;
-  height: 18px;
-  position: absolute;
-  top: 113em;
-  left: 73%;
-  text-align: center;
-}*/
-
 .add_button {
   background-position: 6.925% 13.525%;
   position: absolute;

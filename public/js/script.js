@@ -1,8 +1,5 @@
 console.log('scripts are ready');
 
-// $(document).ready(function(){
-// }); // closing document ready
-
 //code to change canvas background
 
 var backgrounds = $('.mission_scenes'); 
@@ -56,17 +53,6 @@ $('.slider1').slick({
 // instead of a settings object
 ]
 });
-
-// $( "textarea" ).click(function() {
-//   $(this).val().appendTo('.updated_text');
-//   alert( "Handler for .click() called." );
-// });
-
-// function addtext (){
-
-//   var textInput = $(textarea).val();
-
-// }
 
 $('.add_button').click(function() {
   var text = $('textarea').val();
