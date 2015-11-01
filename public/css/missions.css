@@ -4,12 +4,11 @@
   height: 14%;
   position: absolute;
   top: 55%;
-  left: -1%; /* 10px */
 }
 
 .mission_bgs ul {
   position: absolute;
-  top: -5%;
+  top: -30px;
 }
 
 .mission_scenes {
