@@ -34,4 +34,4 @@ app.get('/', function(req, res) {
 })
 
 app.listen(port);
-console.log("Awesome3 up and running on " + port);
+console.log("Awesome2 up and running on " + port);
