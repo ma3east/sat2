@@ -1,0 +1,30 @@
+/*slider styling*/
+.slider1 {
+  position: relative;
+  left: 4%;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 33%;
+  height: auto;
+  /*margin-top: 30px;*/
+  background-color: transparent;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.chars {
+  width: 5em;
+  height: 6.5em;
+  text-align: center;
+  padding-right: 18%;
+}
+
+.slider1 img {
+  display: inline-block;
+}
+
+.slick-slide
+{
+  width: 80px;
+}

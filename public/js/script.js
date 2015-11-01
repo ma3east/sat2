@@ -16,7 +16,7 @@ for(i = 0; i < backgrounds.length; i++) {
 
 };
 
-//enable slick slider
+//enable slick slider1 for characters
 
 $('.slider1').slick({
   infinite: false,
@@ -54,7 +54,21 @@ $('.slider1').slick({
 ]
 });
 
+//enable slick slider2 for backgrounds
+
+$('.slider2').slick({
+  vertical: true,
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  adaptiveHeight: true,
+  variableWidth: true,
+  mobileFirst: true
+});
+
 // updated text on scene on clicking add button
+// need to resolve keeping class??
 $(".add_button").click(function() {
 
   $('.updated_text p').replaceWith( $( 'textarea' ).val() );
@@ -65,32 +79,88 @@ $(".add_button").click(function() {
 
 var counter = 0;
 
- $('.preview_button').on('click',function( event ){
+$('.preview_button').on('click',function( event ){
 
   event.preventDefault();
 
   if(counter === 0){
-     $('.preview_button').css('backgroundPosition', '9.497% 2.724%');
-     counter = 1;
-   } else if (counter === 1){
-       $('.preview_button').css('backgroundPosition', '0.489% 2.724%');
-       counter = 0;
-   }
- });
+   $('.preview_button').css('backgroundPosition', '9.497% 2.724%');
+   counter = 1;
+ } else if (counter === 1){
+   $('.preview_button').css('backgroundPosition', '0.489% 2.724%');
+   counter = 0;
+ }
+});
 
 //toggle add_button
- $('.add_button').on('click',function( event ){
+$('.add_button').on('click',function( event ){
 
   event.preventDefault();
 
   if(counter === 0){
-     $('.add_button').css('backgroundPosition', '6.925% 27.049%');
+   $('.add_button').css('backgroundPosition', '6.925% 27.049%');
+   counter = 1;
+ } else if (counter === 1){
+   $('.add_button').css('backgroundPosition', '6.925% 13.525%');
+   counter = 0;
+ }
+});
+
+ //toggle scene1 button
+ $('.scene1').on('click',function( event ){
+
+   event.preventDefault();
+
+   if(counter === 0){
+    $('.scene1').css('backgroundPosition', '0.139% 82.573%');
+    counter = 1;
+  } else if (counter === 1){
+    $('.scene1').css('backgroundPosition', '0.139% 49.378%');
+    counter = 0;
+  }
+});
+
+  //toggle scene2 button
+  $('.scene2').on('click',function( event ){
+
+    event.preventDefault();
+
+    if(counter === 0){
+     $('.scene2').css('backgroundPosition', '7.911% 82.573%');
      counter = 1;
    } else if (counter === 1){
-       $('.add_button').css('backgroundPosition', '6.925% 13.525%');
-       counter = 0;
+     $('.scene2').css('backgroundPosition', '7.911% 49.378%');
+     counter = 0;
    }
  });
+
+   //toggle scene3 button
+   $('.scene3').on('click',function( event ){
+
+     event.preventDefault();
+
+     if(counter === 0){
+      $('.scene3').css('backgroundPosition', '15.753% 82.573%');
+      counter = 1;
+    } else if (counter === 1){
+      $('.scene3').css('backgroundPosition', '15.753% 49.378%');
+      counter = 0;
+    }
+  });
+
+    //toggle scene4 button
+    $('.scene4').on('click',function( event ){
+
+      event.preventDefault();
+
+      if(counter === 0){
+       $('.scene4').css('backgroundPosition', '23.648% 82.573%');
+       counter = 1;
+     } else if (counter === 1){
+       $('.scene4').css('backgroundPosition', '23.648% 49.378%');
+       counter = 0;
+     }
+   });
 
 //code for drag and drop of characters on canvas
 $(function() {

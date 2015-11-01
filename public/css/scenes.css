@@ -13,6 +13,14 @@
   box-shadow: 0 3px 3px #AFAFAF;*/
 }
 
+.scene_links {
+  position: relative;
+  bottom: 12%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .updated_text {
   color: #AFAFAF;
   padding: 0 5px 0 5px;
@@ -21,7 +29,7 @@
   position: absolute;
   top: 80%;
   height: 20%;
-  width: 100%;
+  max-width: 100%;
   background-color: black;
   border-top: 2px solid #AFAFAF;
   box-shadow: 0 3px 3px #AFAFAF;
@@ -44,6 +52,7 @@
 
 .scenes p {
   color: #AFAFAF;
+  margin-left: 25px;
 }
 
 .scene_text {

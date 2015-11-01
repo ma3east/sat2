@@ -27,3 +27,39 @@
   right: -38%;
 }
 
+.scene1 {
+  background-position: 0.139% 49.378%;
+  position: relative;
+  max-width: 100%;
+  width: 108px;
+  height: 34px;
+  margin-left: 10px;
+}
+
+.scene2 {
+  background-position: 7.911% 49.378%;
+  position: relative;
+  max-width: 100%;
+  width: 109px;
+  height: 34px;
+  margin-left: 10px;
+}
+
+.scene3 {
+  background-position: 15.753% 49.378%;
+  position: relative;
+  max-width: 100%;
+  width: 109px;
+  height: 34px;
+  margin-left: 10px;
+}
+.scene4 {
+  background-position: 23.648% 49.378%;
+  position: relative;
+  max-width: 100%;
+  width: 108px;
+  height: 34px;
+  margin-left: 10px;
+}
+
+
