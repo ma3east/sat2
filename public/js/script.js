@@ -104,6 +104,31 @@ spriteAltBgs('.gallery', '21.488% 28.794%', '21.488% 15.175%');
 spriteAltBgs('.official', '31.567% 28.794%', '31.567% 15.175%');
 
 //code for drag and drop of characters on canvas
+if (jQuery.ui) {
+console.log("jquery ui is available");
+}
+$(document).ready(function(){
+    init();
+});
+
+function init() {
+
+  //unbind from slick slider to enable dragging
+  $('*[draggable!=true]','.slick-track').unbind('dragstart');
+    $( ".chars" ).draggable({
+      helper: 'clone',
+      revert: 'invalid',
+      appendTo: '.scenes',
+      zIndex: 300,
+      cursor: 'move',
+      scroll: false
+  }); 
+}
+
+$(".chars").on("draggable mouseenter mousedown droppable",function(event){
+  event.stopPropagation();
+});
+
 // $(function() {
 //   $( ".chars" ).droppable({
 //     drop: function( event, ui ) {
@@ -130,9 +155,7 @@ spriteAltBgs('.official', '31.567% 28.794%', '31.567% 15.175%');
 // }); 
 // });
 
-$(".chars").on("draggable mouseenter mousedown droppable",function(event){
-  event.stopPropagation();
-});
+
 
 //test for elements related to browser support
 function elementSupportsAttribute(element, attribute) {
@@ -146,27 +169,28 @@ function elementSupportsAttribute(element, attribute) {
 
 //textarea placeholder support 
 
-if (!elementSupportsAttribute('textarea', 'placeholder')) {
-// Fallback for browsers that don't support HTML5 placeholder attribute
 var originalText = "Only the best story will win the Grand Prize, so think about your story before you submit your scenes! Roughly 3 lines of text be displayed maximum.";
 
+if (!elementSupportsAttribute('textarea', 'placeholder')) {
+// Fallback for browsers that don't support HTML5 placeholder attribute
+
 $("#textarea")
-.data("originalText", $("#textarea").text())
+.data(originalText, $("#textarea").text())
 .css("color", "#AFAFAF")
 .focus(function() {
   var $el = $(this);
-  if (this.value == $el.data("originalText")) {
+  if (this.value == $el.data(originalText)) {
     this.value = "";
   }
 })
 .blur(function() {
   if (this.value == "") {
-    this.value = $(this).data("originalText");
+    this.value = $(this).data(originalText);
   }
 });
 } else {
 // Browser does support HTML5 placeholder attribute, so use it.
 $("#textarea")
 .attr("placeholder", $("#textarea").text())
-.text("Only the best story will win the Grand Prize, so think about your story before you submit your scenes! Roughly 3 lines of text be displayed maximum.");
+.text(originalText);
 }
