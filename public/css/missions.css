@@ -1,23 +1,23 @@
 .mission_bgs {
   box-sizing: border-box;
-  min-width: 18%;
+  min-width: 35%; /*18%*/
   height: 14%;
   position: absolute;
   top: 55%;
 }
 
-.mission_bgs ul {
+/*.mission_bgs ul {
   position: absolute;
   top: -30px;
 }
-
-.mission_scenes {
+*/
+/*.mission_scenes {
   max-width: 70%;
   height: auto;
   border: 3px solid white;
   margin: 15px auto;
   box-shadow: 0 5px 5px #AFAFAF;
-}
+}*/
 
 .mission_bottom {
   position: absolute;

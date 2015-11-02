@@ -7,7 +7,6 @@
   display: inline-flex;
   width: 33%;
   height: auto;
-  /*margin-top: 30px;*/
   background-color: transparent;
   text-align: center;
   box-sizing: border-box;
@@ -24,7 +23,26 @@
   display: inline-block;
 }
 
-.slick-slide
-{
+.slider1 .slick-slide {
   width: 80px;
+}
+
+.slider2 {
+  position: relative;
+  left: 24px;
+  width: 140px;
+  height: auto;
+  background-color: transparent;
+  text-align: center;
+}
+
+.mission_scenes {
+  width: 6em;
+  border: 3px solid white;
+  margin: 15px auto;
+  box-shadow: 0 5px 5px #AFAFAF;
+}
+
+.slider2 .slick-slide{
+  width: 50px;
 }

@@ -7,64 +7,36 @@ nav {
   margin-top: 0;
   }
 
-  li {
-    list-style: none;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex; 
-  }
-
   .navlist {
     position: relative;
   }
-
   .navlist li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    top: 0;
-  }
-
-  .navlist li, .navlist a {
-    height: 44px;
-    display: block;
+    margin-top: 5px;
   }
 
   .home {
     background-position: 14.932% 15.175%;
+    position: relative;
     max-width: 100%;
     width: 70px;
     height: 18px;
+    margin-right: 50px;
   }
 
   .gallery {
     background-position: 21.488% 15.175%;
+    position: relative;
     max-width: 100%;
     width: 112px;
     height: 18px;
+    margin-right: 50px;
   }
 
   .official {
     background-position: 31.567% 15.175%;
+    position: relative;
     max-width: 100%;
     width: 172px;
     height: 18px;
+    margin-right: 50px;
   }
-
-/*nav ul li a {
-  padding-right: 50px;
-  font-size: 20px;
-  color: white;
-  font-weight: 600;
-  }*/
-
-/*nav ul li .home {
-  background-position: 14.932% 15.175%;
-  max-width: 100%;
-  width: 70px;
-  height: 18px;
-  position: absolute;
-  }*/
-
-
