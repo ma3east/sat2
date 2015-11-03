@@ -155,8 +155,6 @@ $(".slider1 div img").on("draggable mouseenter mousedown droppable",function(eve
 // }); 
 // });
 
-
-
 //test for elements related to browser support
 function elementSupportsAttribute(element, attribute) {
   var test = document.createElement(element);
