@@ -115,7 +115,7 @@ function init() {
 
   //unbind from slick slider to enable dragging
   $('*[draggable!=true]','.slick-track').unbind('dragstart');
-    $( ".chars" ).draggable({
+    $( ".slider1 div img" ).draggable({
       helper: 'clone',
       revert: 'invalid',
       appendTo: '.scenes',
@@ -125,7 +125,7 @@ function init() {
   }); 
 }
 
-$(".chars").on("draggable mouseenter mousedown droppable",function(event){
+$(".slider1 div img").on("draggable mouseenter mousedown droppable",function(event){
   event.stopPropagation();
 });
 
